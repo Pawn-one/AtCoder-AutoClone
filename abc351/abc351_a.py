@@ -1,0 +1,5 @@
+A = list(map(int,input().split()))
+B = list(map(int,input().split()))
+A_point = sum(A)
+B_point = sum(B)
+print(A_point - B_point + 1)
