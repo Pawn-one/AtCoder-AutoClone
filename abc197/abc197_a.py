@@ -1,3 +1,6 @@
-S = input()
-new_S = S[1:] + S[0]
-print(new_S)
+from collections import deque
+s = input()
+s = deque(s)
+f = s.popleft()
+s.append(f)
+print(''.join(s))

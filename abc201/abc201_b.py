@@ -1,8 +1,6 @@
-N=int(input()) 
-mountains=[]  
-for i in range(N):     
-  S,T=map(str, input().split())     
-  T=int(T)     
-  mountains.append([T,S]) 
-mountains.sort(reverse=True) 
-print(mountains[1][1])
+N = int(input())
+j = {}
+for i in range(N):
+    s,t = map(str,input().split())
+    j[s] = int(t)
+print(sorted(j.items(),key=lambda x:x[1])[-2][0])

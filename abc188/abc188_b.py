@@ -1,11 +1,11 @@
 N = int(input())
-A = list(map(int,input().split()))
-B = list(map(int,input().split()))
-ans = 0
+sum_ab = 0
+a = list(map(int,input().split()))
+b = list(map(int,input().split()))
 for i in range(N):
-    ans += A[i]*B[i]
-if ans == 0:
+    sum_ab += a[i]*b[i]
+
+if sum_ab == 0:
     print('Yes')
 else:
     print('No')
-    
